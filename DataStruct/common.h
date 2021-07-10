@@ -5,7 +5,7 @@ using namespace std;
 
 
 typedef  int ElemType ;
-
+#define Maxsize 100;
 
 //定义一个👉移函数
 template<typename T>
