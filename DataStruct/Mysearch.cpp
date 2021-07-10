@@ -2,7 +2,7 @@
 
 
 
-class Mysearch
+class MySeqsearch:Mysearch
 {
 	 ElemType SequeSearch() {};
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include "common.h"
 
-class Mysearch
+ class Mysearch
 {
 	virtual ElemType SequeSearch() {};
 };
