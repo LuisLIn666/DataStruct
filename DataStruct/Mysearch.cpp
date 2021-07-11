@@ -41,17 +41,18 @@ int Mysearch::Binary_Search(SqList L, ElemType key)
 }
 
 //索引查找
-int Mysearch::Block_Search(vector<ElemType> a, int key, IndexTable table)
+int Mysearch::Block_Search(vector<ElemType> a, int key, IndexTable &table)
 {
 		
-	//1.对块进行排序
-	sort(0, table.len - 1);
+	//1.对块进行排序（待实现）
+	//sort(0, table.len - 1,table);
 	int low, high, mid;
 
 	low = 0; high = table.len - 1;
 	//算法思想：先通过二分查找找到对应的块，再对块进行顺序查找
-	while (low<=mid)
+	while (low<=high)
 	{
+		mid = (low + high) / 2;
 		if (high-low==1) // low和high差一个索引块，说明元素在high所指的块中
 		{
 			for (int i =table.indx[high].start; i <= table.indx[high].end; i++)

@@ -4,6 +4,7 @@
 #include "common.h"
 #include "SSTable.h"
 #include "SqList.h"
+#include "IndexTable.h"
  class Mysearch
 {
 public:
@@ -13,6 +14,6 @@ public:
 	int Binary_Search(SqList L, ElemType key);
 	//øÈ≤È’“
 
-	int Block_Search(vector<ElemType> a, int key, IndexTable table);
+	int Block_Search(vector<ElemType> a, int key, IndexTable &table);
 };
 

@@ -27,6 +27,12 @@
     <ClCompile Include="common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TreeMethod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BiTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mysort.h">
@@ -45,6 +51,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="IndexTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BiTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

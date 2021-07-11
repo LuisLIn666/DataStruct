@@ -139,12 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="common.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mysearch.cpp" />
     <ClCompile Include="Mysort.cpp" />
+    <ClCompile Include="TreeMethod.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BiTree.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="IndexTable.h" />
     <ClInclude Include="Mysearch.h" />

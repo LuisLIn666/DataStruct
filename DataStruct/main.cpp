@@ -1,12 +1,12 @@
 ﻿#include "common.h"
 #include "Mysearch.h"
-
+#include"BiTree.h"
 
 
 int main()
 {
-	Mysearch s;
-	//s.sqsearch();
+	TreeMethod s;
+	s.InOrderTraverseRecursive()
 	
 	return 0;
 }
