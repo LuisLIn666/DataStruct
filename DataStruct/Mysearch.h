@@ -13,7 +13,6 @@ public:
 	//’€∞Î≤È’“
 	int Binary_Search(SqList L, ElemType key);
 	//øÈ≤È’“
-
 	int Block_Search(vector<ElemType> a, int key, IndexTable &table);
 };
 

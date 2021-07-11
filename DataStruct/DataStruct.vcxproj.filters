@@ -13,48 +13,87 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Tree">
+      <UniqueIdentifier>{6720983d-ab36-44f5-b03c-a3eed486319f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tree">
+      <UniqueIdentifier>{dc69e89d-89bd-493e-acae-b9e0caf7dc31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\LineList">
+      <UniqueIdentifier>{82102275-8972-461c-b215-de41b130ba52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Search">
+      <UniqueIdentifier>{de0bbbc7-4027-467b-9d3a-196ad56dc7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Sort">
+      <UniqueIdentifier>{5b6867af-a408-439e-a5b6-6427391897b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Search">
+      <UniqueIdentifier>{39875518-ef90-48a4-8681-6b2445558854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\sort">
+      <UniqueIdentifier>{9e918f39-f611-4df4-8987-052235a25a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LineList">
+      <UniqueIdentifier>{289ca0ad-4a6a-4b3a-b252-6ad147d9fc67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Mysort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Mysearch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TreeMethod.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="BiTree.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="BTreeNode.cpp">
+      <Filter>源文件\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="BTree.cpp">
+      <Filter>源文件\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Mysearch.cpp">
+      <Filter>源文件\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Mysort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="SqList.cpp">
+      <Filter>源文件\LineList</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mysort.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Mysearch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SSTable.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SqList.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="BiTree.h">
+      <Filter>头文件\Tree</Filter>
     </ClInclude>
     <ClInclude Include="IndexTable.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Search</Filter>
     </ClInclude>
-    <ClInclude Include="BiTree.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="BTree.h">
+      <Filter>头文件\Search</Filter>
     </ClInclude>
+    <ClInclude Include="BTreeNode.h">
+      <Filter>头文件\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="SSTable.h">
+      <Filter>头文件\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Mysearch.h">
+      <Filter>头文件\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Mysort.h">
+      <Filter>头文件\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="SqList.h">
+      <Filter>头文件\LineList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataStruct.licenseheader" />
   </ItemGroup>
 </Project>
