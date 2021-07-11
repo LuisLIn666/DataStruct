@@ -1,7 +1,11 @@
 #pragma once
 #include "common.h"
-typedef struct
+
+class SSTable
 {
-	ElemType* elem;
-	int TableLen;
-}SStable;
+public:
+	 ElemType* elem;
+	 int TableLen;
+};
+
+

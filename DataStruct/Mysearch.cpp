@@ -4,8 +4,9 @@
 #include "IndexTable.h"
 #include <algorithm>
 //带有哨兵的顺序查找
-int Mysearch::Sq_search(SStable ST,ElemType key)
+int Mysearch::Sq_search(SSTable ST,ElemType key)
 {
+	
 	ST.elem[0] = key;
 	int i;
 	for ( i = ST.TableLen; ST.elem[i] != key; i--);

@@ -5,11 +5,12 @@
 #include "SSTable.h"
 #include "SqList.h"
 #include "IndexTable.h"
+
  class Mysearch
 {
 public:
 	//À≥–Ú≤È’“
-	int Sq_search(SStable ST,ElemType key);
+	int Sq_search(SSTable ST,ElemType key);
 	//’€∞Î≤È’“
 	int Binary_Search(SqList L, ElemType key);
 	//øÈ≤È’“
