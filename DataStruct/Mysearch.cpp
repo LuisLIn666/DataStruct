@@ -21,11 +21,11 @@ int Mysearch::Binary_Search(SqList L, ElemType key)
 	while (low<=high)
 	{
 		mid= (low + high) / 2;
-		if (L.elem[mid]==key)
+		if (L.data[mid]==key)
 		{
 			return mid;
 		}
-		else if(L.elem[mid]>key)
+		else if(L.data[mid]>key)
 		{
 			high = mid - 1;
 		}

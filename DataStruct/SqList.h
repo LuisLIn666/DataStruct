@@ -35,5 +35,7 @@ private:
 	ElemType* data;
 	int length;
 	int MaxSize;
+
+	friend class Mysearch;
 };
 

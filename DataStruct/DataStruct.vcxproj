@@ -139,16 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BitNode.cpp" />
+    <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="BTree.cpp" />
     <ClCompile Include="BTreeNode.cpp" />
-    <ClCompile Include="common.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mysearch.cpp" />
     <ClCompile Include="Mysort.cpp" />
-    <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="SqList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitNode.h" />
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="BTree.h" />
     <ClInclude Include="BTreeNode.h" />

@@ -14,14 +14,14 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #include "SqList.h"
+#include "BitNode.h"
 
 
 int main()
 {
-	ElemType a[2] = { 1,2 };
-	SqList* l = new SqList(2);
-	l->addList(a); 
-	l->printList();
+	BitNode *p=new BitNode(2);
+
+
 	
 	return 0;
 }

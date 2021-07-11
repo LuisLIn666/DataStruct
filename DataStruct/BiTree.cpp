@@ -1,55 +1,16 @@
+/*************************************************************************************
+ *
+ * 文 件 名:   BiTree.cpp
+ * 描    述: 
+ * 
+ * 版    本：  V1.0
+ * 创 建 者：  01
+ * 创建时间：  2021/7/11 17:07
+ * ======================================
+ * 历史更新记录
+ * 版本：V          修改时间：         修改人：
+ * 修改内容：
+ * ======================================
+*************************************************************************************/
+// Copyright (c) 2011 rubicon IT GmbH
 #include "BiTree.h"
-
-BiTNode* TreeMethod::InitTree()
-{
-	try
-	{
-		BiTree p = new BiTNode;
-		return p;
-	}
-	catch (const std::exception& e)
-	{
-		cout << e.what();
-		exit(-1);
-	}
-		
-	
-}
-
-void TreeMethod::visit(BiTree T)
-{
-	cout << T->data << endl;
-
-}
-
-void TreeMethod::InOrderTraverseRecursive(BiTree T)
-{
-	if (T)
-	{
-		InOrderTraverseRecursive(T->lchild);
-		visit(T);
-		InOrderTraverseRecursive(T->rchild);
-	}
-	
-}
-
-void TreeMethod::PreOrderTraverseRecursive(BiTree T)
-{
-	if (T)
-	{
-		visit(T);
-		PreOrderTraverseRecursive(T->lchild);
-		PreOrderTraverseRecursive(T->rchild);
-	}
-}
-void TreeMethod::PostTraverseRecursive(BiTree T)
-{
-	if (T)
-	{
-		
-		PostTraverseRecursive(T->lchild);
-		PostTraverseRecursive(T->rchild);
-		visit(T);
-	}
-}
-

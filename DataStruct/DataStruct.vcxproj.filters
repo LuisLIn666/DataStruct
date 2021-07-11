@@ -42,12 +42,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="common.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="BiTree.cpp">
-      <Filter>源文件\Tree</Filter>
-    </ClCompile>
     <ClCompile Include="BTreeNode.cpp">
       <Filter>源文件\Search</Filter>
     </ClCompile>
@@ -63,13 +57,16 @@
     <ClCompile Include="SqList.cpp">
       <Filter>源文件\LineList</Filter>
     </ClCompile>
+    <ClCompile Include="BitNode.cpp">
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="BiTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
       <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BiTree.h">
-      <Filter>头文件\Tree</Filter>
     </ClInclude>
     <ClInclude Include="IndexTable.h">
       <Filter>头文件\Search</Filter>
@@ -91,6 +88,12 @@
     </ClInclude>
     <ClInclude Include="SqList.h">
       <Filter>头文件\LineList</Filter>
+    </ClInclude>
+    <ClInclude Include="BitNode.h">
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="BiTree.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
