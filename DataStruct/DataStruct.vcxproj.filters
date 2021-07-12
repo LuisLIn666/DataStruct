@@ -31,11 +31,11 @@
     <Filter Include="源文件\Search">
       <UniqueIdentifier>{39875518-ef90-48a4-8681-6b2445558854}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\sort">
-      <UniqueIdentifier>{9e918f39-f611-4df4-8987-052235a25a1f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\LineList">
       <UniqueIdentifier>{289ca0ad-4a6a-4b3a-b252-6ad147d9fc67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Sort">
+      <UniqueIdentifier>{9e918f39-f611-4df4-8987-052235a25a1f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +52,7 @@
       <Filter>源文件\Search</Filter>
     </ClCompile>
     <ClCompile Include="Mysort.cpp">
-      <Filter>源文件\sort</Filter>
+      <Filter>源文件\Sort</Filter>
     </ClCompile>
     <ClCompile Include="SqList.cpp">
       <Filter>源文件\LineList</Filter>
@@ -61,7 +61,7 @@
       <Filter>源文件\Tree</Filter>
     </ClCompile>
     <ClCompile Include="BiTree.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

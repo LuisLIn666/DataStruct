@@ -14,7 +14,7 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #include "SqList.h"
-
+#include<array>
 SqList::SqList(int size)
 {
 	this->data = new ElemType[size];
@@ -43,6 +43,7 @@ bool SqList::addList(ElemType e[])
 	{
 		if (sizeof(e)/sizeof(ElemType)<=MaxSize)
 		{
+				
 			for (int i = 0; i <MaxSize; i++)
 			{
 				data[i] = e[i];

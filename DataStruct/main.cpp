@@ -13,14 +13,17 @@
  * ======================================
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
+#include <array>
+#include <vector>
 #include "SqList.h"
 #include "BitNode.h"
 
 
+
 int main()
 {
-	BitNode *p=new BitNode(2);
-
+	vector<int> a = { 1,2 };
+	cout << a.size();
 
 	
 	return 0;
