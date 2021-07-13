@@ -73,7 +73,7 @@ void Mysort::shellSort(vector<ElemType> &e)
 
 void Mysort::BubbleSort(vector<ElemType>& e)
 {
-	for (int i = 0; i < e.size()-1; i++)
+	for (int i = 0; i <e.size()-1; i++)
 	{
 		bool flag = false;
 		for (int j = e.size()-1; j>i; j--)
