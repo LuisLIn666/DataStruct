@@ -22,5 +22,13 @@ class Mysort
 
 	//‘Ò≈≈–Ú
 	void selectSort(vector<ElemType>& e);
+
+	//¥Û∏˘∂—≈≈–Ú
+	void heapSort(vector<ElemType>& e);
+
+	//πÈ≤¢≈≈–Ú
+	void mergeSort(vector<ElemType>& e,int low ,int high);
+
+
 };
 

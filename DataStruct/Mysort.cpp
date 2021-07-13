@@ -143,3 +143,86 @@ void Mysort::selectSort(vector<ElemType>& e)
 		}
 	}
 }
+//建立大根堆
+void HeadAdjust(vector<ElemType>& e,int k,int len)
+{
+	ElemType temp = e[k];
+	for (int i = 2*k; i <=len; i*=2)
+	{
+		if (i < len && e[i] < e[i + 1])
+		{
+			i++;
+		}
+		else if (temp >e[i])
+		{
+			break;
+		}
+		else
+		{
+			e[k] = e[i];
+			k = i;
+		}
+	}
+	e[k] = temp;
+}
+void buildMaxHeap(vector<ElemType>& e)
+{
+	for (int i = e.size()/2; i >=0; i--)
+	{
+		HeadAdjust(e, i, e.size());
+	}
+}
+
+void Mysort::heapSort(vector<ElemType>& e) 
+{
+	buildMaxHeap(e);
+	for (int i = e.size(); i>=0; i--)
+	{
+		mySwap<ElemType>(e[i], e[0]);
+		HeadAdjust(e, 1, i - 1);
+	}
+}
+void Merge(vector<ElemType>& e, int low, int mid,int high)
+{
+	//e表的low~mid和mid+1~high均为有序序列
+	int high_point = mid + 1;
+	int low_point = low;
+	vector<ElemType> b;
+	for (low_point, high_point; low_point <= mid && high_point <= high_point;)
+	{
+		if (e[low_point]<=e[high_point])
+		{
+			b.push_back(e[low_point]);
+			low_point++;
+		}
+		else
+		{
+			b.push_back(e[high_point]);
+			high_point++;
+		}
+	}
+	while (low_point<=mid)
+	{
+		b.push_back(e[low_point]);
+		low_point++;
+	}
+
+	while (high_point <= high)
+	{
+		b.push_back(e[high_point]);
+		high_point++;
+	}
+	e = b;
+}
+
+
+void Mysort::mergeSort(vector<ElemType>& e, int low, int high) 
+{
+	if (low<high)
+	{
+		int mid = (low + high) / 2;
+		mergeSort(e,low,mid);
+		mergeSort(e,mid+1,high);
+		Merge(e,low,mid,high);
+	}
+}
