@@ -37,6 +37,12 @@
     <Filter Include="源文件\Sort">
       <UniqueIdentifier>{9e918f39-f611-4df4-8987-052235a25a1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Graph">
+      <UniqueIdentifier>{abf136a5-d1b0-4719-80e7-c73feaf9364c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Graph">
+      <UniqueIdentifier>{a5b86997-5506-4ddb-a2d3-0d1fdadd2426}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +68,15 @@
     </ClCompile>
     <ClCompile Include="BiTree.cpp">
       <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcNode.cpp">
+      <Filter>源文件\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>源文件\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="VNode.cpp">
+      <Filter>源文件\Graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -92,8 +107,17 @@
     <ClInclude Include="BitNode.h">
       <Filter>头文件\Tree</Filter>
     </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>头文件\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcNode.h">
+      <Filter>头文件\Graph</Filter>
+    </ClInclude>
     <ClInclude Include="BiTree.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="VNode.h">
+      <Filter>头文件\Graph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@ using namespace std;
 
 
 typedef  int ElemType ;
-#define Maxsize 100;
+#define Maxsize 100
 
 //定义一个👉移函数，将最后一个数插入到第一个数，第一个至第i-1个往后移动
 template<typename T>

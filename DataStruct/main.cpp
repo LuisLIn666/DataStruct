@@ -18,13 +18,15 @@
 #include "SqList.h"
 #include "BitNode.h"
 
-
-
 int main()
 {
-	vector<int> a = { 1,2 };
-	cout << a.size();
-
+	int n=100;
+	
+	while (0<----n)
+	{
+		
+		cout << n <<" "<< endl;
+	}
 	
 	return 0;
 }
