@@ -1,11 +1,12 @@
+#include "BitNode.h"
 /*************************************************************************************
  *
- * 文 件 名:   BitNode.h
- * 描    述:   二叉树节点
+ * 文 件 名:   BITNODE.CPP
+ * 描    述: 
  * 
  * 版    本：  V1.0
  * 创 建 者：  01
- * 创建时间：  2021/7/11 16:58
+ * 创建时间：  2021/7/15 15:12
  * ======================================
  * 历史更新记录
  * 版本：V          修改时间：         修改人：
@@ -13,19 +14,8 @@
  * ======================================
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
-#pragma once
-#include "common.h"
 
-
-class BitNode
+BitNode::BitNode(ElemType data)
 {
-public:
-	BitNode();
-	BitNode(ElemType data);
-
-	ElemType data;
-	BitNode* lchild, * rchild;
-
-};
-
-
+	this->data = data;
+}
