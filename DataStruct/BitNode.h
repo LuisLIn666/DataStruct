@@ -15,14 +15,15 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
 #include "common.h"
+
+
 class BitNode
 {
 public:
-	//创建节点
-	BitNode(ElemType e);
-	void visit();
-private:
+	
 	ElemType data;
 	BitNode* lchild, * rchild;
+
 };
+
 

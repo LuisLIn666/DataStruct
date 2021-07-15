@@ -63,9 +63,6 @@
     <ClCompile Include="SqList.cpp">
       <Filter>源文件\LineList</Filter>
     </ClCompile>
-    <ClCompile Include="BitNode.cpp">
-      <Filter>源文件\Tree</Filter>
-    </ClCompile>
     <ClCompile Include="BiTree.cpp">
       <Filter>源文件\Tree</Filter>
     </ClCompile>

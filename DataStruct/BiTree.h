@@ -14,8 +14,29 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
+#include "BitNode.h"
 class BiTree
 {
-	
+
+public:
+	BiTree();
+	//访问当前节点
+	void visit(BitNode* T);
+
+	void createBiTree(ElemType e);
+	//前序遍历
+	void preOrder(BitNode*T);
+
+	//中序遍历
+
+	void inOrder(BitNode* T);
+
+	//后序遍历
+	void postOrder(BitNode* T);
+
+
+private:
+	BitNode* root;
+	int high;
 };
 

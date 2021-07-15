@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArcNode.cpp" />
-    <ClCompile Include="BitNode.cpp" />
     <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="BTree.cpp" />
     <ClCompile Include="BTreeNode.cpp" />
