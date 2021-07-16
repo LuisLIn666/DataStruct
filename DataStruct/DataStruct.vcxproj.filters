@@ -75,8 +75,14 @@
     <ClCompile Include="VNode.cpp">
       <Filter>源文件\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="BITNODE.CPP">
-      <Filter>源文件</Filter>
+    <ClCompile Include="BitNode.CPP">
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="AVLTreeNode.cpp">
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="AVLTree.cpp">
+      <Filter>源文件\Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="VNode.h">
       <Filter>头文件\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTreeNode.h">
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>头文件\Tree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

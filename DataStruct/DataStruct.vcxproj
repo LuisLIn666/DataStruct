@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArcNode.cpp" />
-    <ClCompile Include="BITNODE.CPP" />
+    <ClCompile Include="AVLTree.cpp" />
+    <ClCompile Include="AVLTreeNode.cpp" />
+    <ClCompile Include="BitNode.CPP" />
     <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="BTree.cpp" />
     <ClCompile Include="BTreeNode.cpp" />
@@ -153,6 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArcNode.h" />
+    <ClInclude Include="AVLTree.h" />
+    <ClInclude Include="AVLTreeNode.h" />
     <ClInclude Include="BitNode.h" />
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="BTree.h" />
