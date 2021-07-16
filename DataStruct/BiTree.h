@@ -51,6 +51,12 @@ public:
 
 	//前序遍历非递归
 	void preOrdernorecursion(BitNode* T);
+
+	//中序遍历非递归
+	void inOrdernorecursion(BitNode* T);
+
+	//后序遍历非递归
+	void postOrdernorecursion(BitNode* T);
 private:
 	BitNode* root;
 	int high;

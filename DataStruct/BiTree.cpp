@@ -157,7 +157,6 @@ void BiTree::preOrdernorecursion(BitNode* T)
 	if (!T)
 	{
 		throw "Error";
-
 	}
 
 	stack<BitNode*> STACK;
@@ -172,9 +171,76 @@ void BiTree::preOrdernorecursion(BitNode* T)
 			STACK.push(q);
 			q=q->lchild;
 		}
-		q= STACK.top();
-		q = q->lchild;
-		STACK.pop();
+		if (!STACK.empty())
+		{
+			auto p = STACK.top();
+			q = p->rchild;
+			STACK.pop();
+		}
 	}
 	
+}
+
+void BiTree::inOrdernorecursion(BitNode* T)
+{
+	if (!T)
+	{
+		throw "Error";
+	}
+
+	stack<BitNode*> STACK;
+	auto p = T;
+	
+	while (!STACK.empty() || p)
+	{
+		if (p)
+		{
+			STACK.push(p);
+			p = p->lchild;
+		}
+		else
+		{
+			auto p = STACK.top();
+			visit(p);
+			STACK.pop();
+			p = p->rchild;
+
+		}
+	}
+}
+
+void BiTree::postOrdernorecursion(BitNode* T)
+{
+	if (!T)
+	{
+		throw "Error";
+	}
+
+	stack<BitNode*> STACK;
+	auto p = T;
+
+	while (!STACK.empty() || p)
+	{
+		if (p)
+		{
+			STACK.push(p);
+			p = p->lchild;
+
+		}
+		else 
+		{
+			p = STACK.top();
+			if (!p->rchild)
+			{
+				visit(p);
+				STACK.pop();
+			}
+			else
+			{
+				p = p->rchild;
+			}
+			
+			
+		}
+	}
 }
