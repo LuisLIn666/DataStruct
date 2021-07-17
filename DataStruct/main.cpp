@@ -13,11 +13,14 @@
  * ======================================
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
+/*
 #include <array>
 #include <vector>
 #include "SqList.h"
 #include "BitNode.h"
-
+*/
+#include <iostream>
+using namespace std;
 int main()
 {
 	int n=100;
