@@ -31,6 +31,9 @@ public:
 
 	//输出内容
 	void printList();
+
+	//插入操作
+	bool listInsert(SqList &L,int i,ElemType e);
 private:
 	ElemType* data;
 	int length;
