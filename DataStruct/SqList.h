@@ -34,6 +34,13 @@ public:
 
 	//插入操作
 	bool listInsert(SqList &L,int i,ElemType e);
+
+	//查找元素
+	int LocateEelem(SqList L,ElemType e);
+	
+	//按位查找
+	ElemType getElem(SqList L, int i);
+
 private:
 	ElemType* data;
 	int length;

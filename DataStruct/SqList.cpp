@@ -14,17 +14,18 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #include "SqList.h"
+#include "Mysearch.h"
 #include<array>
 SqList::SqList(int size)
 {
-	this->data = new ElemType[size];
-	this->length = 0;
-	this->MaxSize = size;
+	data = new ElemType[size];
+	length = 0;
+	MaxSize = size;
 }
 
 SqList::~SqList()
 {
-	delete[] this->data;
+	delete[] data;
 }
 
 bool SqList::is_empty()
@@ -94,4 +95,20 @@ bool SqList::listInsert(SqList& L, int i, ElemType e)
 
 	}
 	
+}
+
+int SqList::LocateEelem(SqList L,ElemType e)
+{
+	Mysearch *m=new Mysearch;
+	return m->Binary_Search(L,e);
+	 
+}
+
+ElemType SqList::getElem(SqList L, int i)
+{
+	if (L.length==0||i>L.MaxSize||i<1)
+	{
+		throw "ERROR";
+	}
+	return L.data[i-1];
 }
