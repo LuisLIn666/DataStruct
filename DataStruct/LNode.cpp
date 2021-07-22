@@ -18,8 +18,5 @@
 LNode::LNode(const ElemType data)
 {
 	this->data = data;
-}
-
-LNode::LNode()
-{
+	this->next = nullptr;
 }

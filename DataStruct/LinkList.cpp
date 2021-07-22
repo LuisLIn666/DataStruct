@@ -16,6 +16,34 @@
 #include "LinkList.h"
 LinkList::LinkList()
 {
-	this->L = new LNode;
-	this->length = 0;
+	head = new LNode;
+}
+
+LinkList LinkList::listHeadInsert(ElemType data)
+{
+	auto p = new LNode(data);
+
+	p->next = head->next;
+	head->next = p;
+	
+	return LinkList();
+}
+
+LNode* LinkList::find(const ElemType data)
+{
+	auto p = head;
+	for (; p; p = p->next){
+		if (p->next->data == data);
+		break;
+	}
+	return p;
+}
+
+void LinkList::insertPos(ElemType finddata, ElemType insertdata)
+{
+	auto p=find(finddata);
+	auto q = new LNode(insertdata);
+	q->next = p->next;
+	p->next = q;
+	
 }

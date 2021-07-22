@@ -20,8 +20,15 @@ class LinkList
 {
 	LinkList();
 
+	//头插入法
+	LinkList listHeadInsert(ElemType data);
+
+	//查找d上一个节点
+	LNode* find(const ElemType insertdata);
+
+	//d的位置插入
+	void insertPos(ElemType finddata, ElemType insertdata);
 private:
-	int length;
-	LNode* L;
+	LNode* head;
 };
 

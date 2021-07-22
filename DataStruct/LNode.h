@@ -15,16 +15,18 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
 #include "common.h"
+
+
+
 class LNode
 {
 public:
+	LNode(const ElemType data);
 
-    LNode(const ElemType data);
-    LNode();
-    ElemType data;     //数据域
-    LNode* next;  //指针域
-
-
-   
+	LNode();
+	friend class LinkList;
+private:
+	ElemType data;     //数据域
+	LNode* next;  //指针域
 };
 
