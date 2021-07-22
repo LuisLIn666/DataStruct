@@ -41,6 +41,9 @@ public:
 	//按位查找
 	ElemType getElem(SqList L, int i);
 
+	//删除元素
+	bool listDelete(SqList& L, int i, ElemType& e);
+
 private:
 	ElemType* data;
 	int length;

@@ -43,6 +43,12 @@
     <Filter Include="源文件\Graph">
       <UniqueIdentifier>{a5b86997-5506-4ddb-a2d3-0d1fdadd2426}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\MyTest">
+      <UniqueIdentifier>{4ba41e64-949f-4e02-aa77-932a2b4f6a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MyTest">
+      <UniqueIdentifier>{d1db1b05-ca0d-4a5b-9e42-ccbdb41db385}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -83,6 +89,15 @@
     </ClCompile>
     <ClCompile Include="AVLTree.cpp">
       <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="ChapterTwoTest.cpp">
+      <Filter>源文件\MyTest</Filter>
+    </ClCompile>
+    <ClCompile Include="LNode.cpp">
+      <Filter>源文件\LineList</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkList.cpp">
+      <Filter>源文件\LineList</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +145,15 @@
     </ClInclude>
     <ClInclude Include="AVLTree.h">
       <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterTwoTest.h">
+      <Filter>头文件\MyTest</Filter>
+    </ClInclude>
+    <ClInclude Include="LNode.h">
+      <Filter>头文件\LineList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkList.h">
+      <Filter>头文件\LineList</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

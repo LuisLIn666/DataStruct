@@ -99,9 +99,7 @@ bool SqList::listInsert(SqList& L, int i, ElemType e)
 
 int SqList::LocateEelem(SqList L,ElemType e)
 {
-	Mysearch *m=new Mysearch;
-	return m->Binary_Search(L,e);
-	 
+	return (new Mysearch)->Binary_Search(L, e) + 1;
 }
 
 ElemType SqList::getElem(SqList L, int i)
@@ -111,4 +109,14 @@ ElemType SqList::getElem(SqList L, int i)
 		throw "ERROR";
 	}
 	return L.data[i-1];
+}
+
+bool SqList::listDelete(SqList& L, int i, ElemType& e)
+{
+	if(i<1||i>L.length)
+		return false;
+	e = L.data[i - 1];
+	for (int j = i; j < L.length; j++)
+		L.data[j - 1] = L.data[j];
+	L.length--;
 }
