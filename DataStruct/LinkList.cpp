@@ -16,7 +16,7 @@
 #include "LinkList.h"
 LinkList::LinkList()
 {
-	head = new LNode;
+	head = new LNode(NULL);
 }
 
 LinkList LinkList::listHeadInsert(ElemType data)

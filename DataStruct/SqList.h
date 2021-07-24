@@ -43,6 +43,12 @@ public:
 
 	//删除元素
 	bool listDelete(SqList& L, int i, ElemType& e);
+	
+	//找到最小元素
+
+
+	
+
 
 private:
 	ElemType* data;
@@ -50,5 +56,6 @@ private:
 	int MaxSize;
 
 	friend class Mysearch;
+	friend class ChapterTwoTest;
 };
 

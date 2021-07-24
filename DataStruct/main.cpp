@@ -20,16 +20,14 @@
 #include "BitNode.h"
 */
 #include <iostream>
+#include <thread>
+
 using namespace std;
+
+
 int main()
 {
-	int n=100;
 	
-	while (0<----n)
-	{
-		
-		cout << n <<" "<< endl;
-	}
 	
 	return 0;
 }

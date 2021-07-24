@@ -23,7 +23,7 @@ class LNode
 public:
 	LNode(const ElemType data);
 
-	LNode();
+	
 	friend class LinkList;
 private:
 	ElemType data;     //Êý¾ÝÓò

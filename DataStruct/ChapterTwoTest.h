@@ -14,8 +14,10 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
+#include "SqList.h"
 class ChapterTwoTest
 {
-
+	//
+	bool del_min(SqList &L);
 };
 
