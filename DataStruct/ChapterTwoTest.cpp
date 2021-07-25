@@ -196,3 +196,52 @@ void ChapterTwoTest::searchExchangeInsert(SqList& L, ElemType x)
 		L.listInsert(L, L.length, x);
 	}
 }
+void ChapterTwoTest::Reverse(SqList& L, int from, int to)
+{
+	//算法思想和第八题类似
+	//本次采用空间复杂度较小方案
+	int i, temp;
+	for (i < 0; i < (to - from + 1) / 2; i++)
+	{
+		temp = L.data[from + i];
+		L.data[from + i] = L.data[to - i];
+		L.data[to - i] = temp;
+	}
+}
+void ChapterTwoTest::left_p(SqList& L, int n, int p)
+{
+	Reverse(L, 0, p - 1);//时间复杂度O（p/2）;
+	Reverse(L, p, n - 1);//时间复杂度O（n-p）/2;
+	Reverse(L, 0, n - 1);//时间复杂度O（n/2）;
+	//O(n),空间O(1);
+}
+
+int ChapterTwoTest::M_Search(SqList& A, SqList& B, int n)
+{
+	//计数器，当k=data[n]时候为所求
+	int k = 1;
+	int p_A = 1, p_B = 1;
+	//判断最后一步是A还是B
+	bool isA;
+	bool isB;
+	while (k<=n)
+	{
+		bool isA = 0;
+		bool isB = 0;
+		if (A.data[p_A]<B.data[p_B])
+		{
+			p_A++;
+			k++;
+			isA = 1;
+		}
+		else
+		{
+			p_B++;
+			k++;
+			isB = 1;
+		}
+	}
+	return isA;isB?A.data[p_A]:B.data[p_B];
+}
+
+//时间复杂度O（n），空间复杂度O（1）

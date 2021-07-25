@@ -45,7 +45,11 @@ class ChapterTwoTest
 	//9
 	void searchExchangeInsert(SqList& L, ElemType x);
 	
-	//10
+	//10将L中的元素循环左移动p个单位
+	void Reverse(SqList& L, int from, int to);
+	void left_p(SqList& L,int from,int to );
 
+	//11
+	int M_Search(SqList& A, SqList& B,int n);
 };
 
