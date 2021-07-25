@@ -14,6 +14,7 @@
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
 #include "ChapterTwoTest.h"
+#include "Mysearch.h"
 
 bool ChapterTwoTest::del_min(SqList& L)
 {
@@ -134,7 +135,7 @@ SqList& ChapterTwoTest::merge(SqList& L1, SqList& L2)
 {
 
 	SqList *l3=new SqList(L1.length+L2.length) ;
-	int i, j, k = 0;
+	int i=0, j=0, k = 0;
 	while (i<L1.length&&j<L2.length)
 	{
 		if (L1.data[i]<L2.data[j])
@@ -158,4 +159,40 @@ SqList& ChapterTwoTest::merge(SqList& L1, SqList& L2)
 	}
 	return *l3;
 	
+}
+
+void ChapterTwoTest::reverse_a_b(SqList& L,int m,int n)
+{
+	SqList *temp= new SqList(m);
+	int start = m + 1;
+	for (int  i = 0; i <n; i++)
+	{
+		temp->data[i++] = L.data[m++];
+		temp->length++;
+	}
+	int j;
+	for ( j = 0; j < m; j++)
+	{
+		L.data[j++] = L.data[start++];
+	}
+	for (int k = 0; k <temp->length; k++)
+	{
+		L.data[j++] = temp->data[k++];
+	}
+}
+
+void ChapterTwoTest::searchExchangeInsert(SqList& L, ElemType x)
+{
+	//调用二分查找算法，如果找到则交换，如果找不到则插入
+	Mysearch m;
+	int isSearch;
+	isSearch=m.Binary_Search(L,x);
+	if (isSearch != -1)
+	{
+		mySwap(L.data[isSearch], L.data[L.length - 1]);
+	}
+	else
+	{
+		L.listInsert(L, L.length, x);
+	}
 }

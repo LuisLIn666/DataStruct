@@ -15,6 +15,7 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
 #include "SqList.h"
+
 class ChapterTwoTest
 {
 	//第一题
@@ -37,5 +38,14 @@ class ChapterTwoTest
 
 	//第七题
 	SqList& merge(SqList& L1, SqList& L2);
+
+	//8
+	void reverse_a_b(SqList& L,int m,int n);
+
+	//9
+	void searchExchangeInsert(SqList& L, ElemType x);
+	
+	//10
+
 };
 
