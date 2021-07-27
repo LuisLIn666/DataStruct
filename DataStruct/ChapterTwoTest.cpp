@@ -201,7 +201,7 @@ void ChapterTwoTest::Reverse(SqList& L, int from, int to)
 	//算法思想和第八题类似
 	//本次采用空间复杂度较小方案
 	int i, temp;
-	for (i < 0; i < (to - from + 1) / 2; i++)
+	for (i = 0; i < (to - from + 1) / 2; i++)
 	{
 		temp = L.data[from + i];
 		L.data[from + i] = L.data[to - i];
@@ -222,8 +222,8 @@ int ChapterTwoTest::M_Search(SqList& A, SqList& B, int n)
 	int k = 1;
 	int p_A = 1, p_B = 1;
 	//判断最后一步是A还是B
-	bool isA;
-	bool isB;
+	bool isA=0;
+	bool isB=0;
 	while (k<=n)
 	{
 		bool isA = 0;

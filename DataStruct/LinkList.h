@@ -28,6 +28,12 @@ class LinkList
 
 	//d的位置插入
 	void insertPos(ElemType finddata, ElemType insertdata);
+
+	//尾插入法建立单链表
+	void tailInsert(LNode* head,ElemType e);
+
+	//按位查找
+	LNode* getEle(LNode* head, int i);
 private:
 	LNode* head;
 };

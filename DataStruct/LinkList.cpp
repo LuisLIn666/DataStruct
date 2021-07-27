@@ -47,3 +47,45 @@ void LinkList::insertPos(ElemType finddata, ElemType insertdata)
 	p->next = q;
 	
 }
+
+void LinkList::tailInsert(LNode* head,ElemType e)
+{
+	//创立头节点
+	if (this->head==NULL)
+	{
+		head = new LNode(NULL);
+	}
+
+	auto h = head; 
+	auto r = h;
+	//r一直移动到最后一个节点
+	if (r->next!=NULL)
+	{
+		r = r->next;
+	}
+
+	auto p = new LNode(e);
+
+	r->next = p;
+	r = r->next;
+}
+
+LNode* LinkList::getEle(LNode* head, int i)
+{
+	int j = 1;
+	auto p = head->next;
+	if (i==0)
+	{
+		return head;
+	}
+	else if (i < 0)
+	{
+		return nullptr;
+	}
+	while (p&&j<i)
+	{
+		p = p->next;
+		j++;
+	}
+	
+}
