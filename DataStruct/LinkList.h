@@ -16,6 +16,7 @@
 #pragma once
 #include "LNode.h"
 
+
 class LinkList
 {
 	LinkList();
@@ -34,6 +35,12 @@ class LinkList
 
 	//按位查找
 	LNode* getEle(LNode* head, int i);
+
+	//按值查找
+	LNode* locateElem(LNode* head,ElemType x);
+
+	//删除当前节点
+
 private:
 	LNode* head;
 };

@@ -89,3 +89,16 @@ LNode* LinkList::getEle(LNode* head, int i)
 	}
 	
 }
+
+LNode* LinkList::locateElem(LNode* head, ElemType x)
+{
+	auto p = head->next;
+	while (p && p->data != x)
+	{
+		p - p->next;
+	}
+
+	return p;
+}
+
+

@@ -49,6 +49,12 @@
     <Filter Include="源文件\MyTest">
       <UniqueIdentifier>{d1db1b05-ca0d-4a5b-9e42-ccbdb41db385}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\stack">
+      <UniqueIdentifier>{bd7fc19a-e8fe-4dfb-98de-e4b7494181fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\stack">
+      <UniqueIdentifier>{7428c1a1-0b19-4a79-bbef-64fdae6a7183}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -98,6 +104,15 @@
     </ClCompile>
     <ClCompile Include="LinkList.cpp">
       <Filter>源文件\LineList</Filter>
+    </ClCompile>
+    <ClCompile Include="DNode.cpp">
+      <Filter>源文件\LineList</Filter>
+    </ClCompile>
+    <ClCompile Include="SqStack.cpp">
+      <Filter>源文件\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkStack.cpp">
+      <Filter>源文件\stack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +169,15 @@
     </ClInclude>
     <ClInclude Include="LinkList.h">
       <Filter>头文件\LineList</Filter>
+    </ClInclude>
+    <ClInclude Include="DNode.h">
+      <Filter>头文件\LineList</Filter>
+    </ClInclude>
+    <ClInclude Include="sqStack.h">
+      <Filter>头文件\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkStack.h">
+      <Filter>头文件\stack</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

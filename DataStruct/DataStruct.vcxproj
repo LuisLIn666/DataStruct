@@ -147,13 +147,16 @@
     <ClCompile Include="BTree.cpp" />
     <ClCompile Include="BTreeNode.cpp" />
     <ClCompile Include="ChapterTwoTest.cpp" />
+    <ClCompile Include="DNode.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="LinkList.cpp" />
+    <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="LNode.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mysearch.cpp" />
     <ClCompile Include="Mysort.cpp" />
     <ClCompile Include="SqList.cpp" />
+    <ClCompile Include="SqStack.cpp" />
     <ClCompile Include="VNode.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,14 +169,17 @@
     <ClInclude Include="BTreeNode.h" />
     <ClInclude Include="ChapterTwoTest.h" />
     <ClInclude Include="common.h" />
+    <ClInclude Include="DNode.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="IndexTable.h" />
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="LinkStack.h" />
     <ClInclude Include="LNode.h" />
     <ClInclude Include="Mysearch.h" />
     <ClInclude Include="Mysort.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SSTable.h" />
+    <ClInclude Include="sqStack.h" />
     <ClInclude Include="VNode.h" />
   </ItemGroup>
   <ItemGroup>

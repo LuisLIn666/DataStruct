@@ -15,6 +15,7 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #include "ChapterTwoTest.h"
 #include "Mysearch.h"
+#include "LNode.h"
 
 bool ChapterTwoTest::del_min(SqList& L)
 {
@@ -243,5 +244,47 @@ int ChapterTwoTest::M_Search(SqList& A, SqList& B, int n)
 	}
 	return isA;isB?A.data[p_A]:B.data[p_B];
 }
-
 //时间复杂度O（n），空间复杂度O（1）
+void ChapterTwoTest::dele_x(LNode* l, ElemType x)
+{
+	if (l->data!=x)
+	{
+		dele_x(l->next, x);
+	}
+	else
+	{
+		auto p = l;
+		l = l->next;
+		delete p;
+	}
+}
+
+void ChapterTwoTest::r_print(LNode* l)
+{
+	if (l->next != NULL)
+	{
+		r_print(l->next);
+	}
+	else
+	{
+		cout << l->data;
+	}
+}
+
+void ChapterTwoTest::dele_x_2(LNode* l, ElemType x)
+{
+	auto  pre = l;
+	auto p = l->next;
+	while (p!=NULL)
+	{
+		if (p->data==x)
+		{
+			auto q = p;
+			pre->next = p->next;
+			delete q;
+		}
+		pre = p;
+		p = p->next;
+	}
+}
+

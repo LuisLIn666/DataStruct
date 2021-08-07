@@ -15,7 +15,7 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
 #include "SqList.h"
-
+#include "LinkList.h"
 class ChapterTwoTest
 {
 	//第一题
@@ -51,5 +51,19 @@ class ChapterTwoTest
 
 	//11
 	int M_Search(SqList& A, SqList& B,int n);
+
+	//2.3节第一题
+	//1
+	void dele_x(LNode *l,ElemType x);
+
+	//2
+	void dele_x_2(LNode* l, ElemType x);
+
+	//3
+	void r_print(LNode* l);
+
+	//5
+
+	//6
 };
 

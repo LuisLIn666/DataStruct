@@ -1,11 +1,11 @@
 /*************************************************************************************
  *
- * 文 件 名:   LNode.h
+ * 文 件 名:   DNode.h
  * 描    述: 
  * 
  * 版    本：  V1.0
  * 创 建 者：  01
- * 创建时间：  2021/7/21 23:51
+ * 创建时间：  2021/7/27 22:11
  * ======================================
  * 历史更新记录
  * 版本：V          修改时间：         修改人：
@@ -15,18 +15,11 @@
 // Copyright (c) 2011 rubicon IT GmbH
 #pragma once
 #include "common.h"
-
-
-
-class LNode
+class DNode
 {
 public:
-	LNode(const ElemType data);
+	ElemType data;
+	DNode* prior, * next;
 
-	
-	
-
-	ElemType data;     //数据域
-	LNode* next;  //指针域
 };
 
