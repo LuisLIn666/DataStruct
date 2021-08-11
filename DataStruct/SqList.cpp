@@ -119,4 +119,5 @@ bool SqList::listDelete(SqList& L, int i, ElemType& e)
 	for (int j = i; j < L.length; j++)
 		L.data[j - 1] = L.data[j];
 	L.length--;
+	return true;
 }

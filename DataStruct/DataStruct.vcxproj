@@ -142,10 +142,13 @@
     <ClCompile Include="ArcNode.cpp" />
     <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="AVLTreeNode.cpp" />
+    <ClCompile Include="BAddTree.cpp" />
+    <ClCompile Include="BAddTreeNode.cpp" />
     <ClCompile Include="BitNode.CPP" />
     <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="BTree.cpp" />
     <ClCompile Include="BTreeNode.cpp" />
+    <ClCompile Include="ChapterEightTest.cpp" />
     <ClCompile Include="ChapterTwoTest.cpp" />
     <ClCompile Include="DNode.cpp" />
     <ClCompile Include="Graph.cpp" />
@@ -163,10 +166,13 @@
     <ClInclude Include="ArcNode.h" />
     <ClInclude Include="AVLTree.h" />
     <ClInclude Include="AVLTreeNode.h" />
+    <ClInclude Include="BAddTree.h" />
+    <ClInclude Include="BAddTreeNode.h" />
     <ClInclude Include="BitNode.h" />
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="BTree.h" />
     <ClInclude Include="BTreeNode.h" />
+    <ClInclude Include="ChapterEightTest.h" />
     <ClInclude Include="ChapterTwoTest.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="DNode.h" />

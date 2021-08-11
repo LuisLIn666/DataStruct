@@ -114,6 +114,15 @@
     <ClCompile Include="LinkStack.cpp">
       <Filter>源文件\stack</Filter>
     </ClCompile>
+    <ClCompile Include="ChapterEightTest.cpp">
+      <Filter>源文件\MyTest</Filter>
+    </ClCompile>
+    <ClCompile Include="BAddTree.cpp">
+      <Filter>源文件\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="BAddTreeNode.cpp">
+      <Filter>源文件\Search</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -178,6 +187,15 @@
     </ClInclude>
     <ClInclude Include="LinkStack.h">
       <Filter>头文件\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterEightTest.h">
+      <Filter>头文件\MyTest</Filter>
+    </ClInclude>
+    <ClInclude Include="BAddTree.h">
+      <Filter>头文件\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="BAddTreeNode.h">
+      <Filter>头文件\Search</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

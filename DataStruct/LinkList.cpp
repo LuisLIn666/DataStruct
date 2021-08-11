@@ -33,7 +33,7 @@ LNode* LinkList::find(const ElemType data)
 {
 	auto p = head;
 	for (; p; p = p->next){
-		if (p->next->data == data);
+		if (p->next->data == data)
 		break;
 	}
 	return p;
@@ -87,7 +87,7 @@ LNode* LinkList::getEle(LNode* head, int i)
 		p = p->next;
 		j++;
 	}
-	
+	return p;
 }
 
 LNode* LinkList::locateElem(LNode* head, ElemType x)
@@ -95,7 +95,7 @@ LNode* LinkList::locateElem(LNode* head, ElemType x)
 	auto p = head->next;
 	while (p && p->data != x)
 	{
-		p - p->next;
+		p = p->next;
 	}
 
 	return p;
