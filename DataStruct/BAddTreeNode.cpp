@@ -21,3 +21,30 @@ inline BATN::BAddTreeNode<K, E>::BAddTreeNode()
 	parent = nullptr;
 	child.insert(child.end(), nullptr);//Ä¬ÈÏº¢×ÓÎª¿Õ
 }
+
+template<typename K, typename E>
+BATN::BAddTreeNode<K, E>::~BAddTreeNode()
+{
+}
+
+template<typename K, typename E>
+inline bool BATN::BAddTreeNode<K, E>::isLeaf() const
+{
+	return !child[0];
+}
+
+
+template<typename K, typename E>
+inline BATN::BAddTreeLeafNode<K, E>::BAddTreeLeafNode()
+{
+	last = nullptr; next = nullptr;
+}
+template<typename K, typename E>
+inline BATN::BAddTreeLeafNode<K, E>::~BAddTreeLeafNode()
+{
+	int _s = e.size();
+	for (int i = 0; i < _s; ++i) {
+		delete e[i], e[i] = nullptr;
+	}
+	e.resize(0);
+}
