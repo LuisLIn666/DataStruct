@@ -13,20 +13,31 @@
  * ======================================
 *************************************************************************************/
 // Copyright (c) 2011 rubicon IT GmbH
-/*
-#include <array>
-#include <vector>
-#include "SqList.h"
-#include "BitNode.h"
-*/
+
 #include <iostream>
 #include <thread>
+
+#include "SSTable.h"
+#include"ChapterEightTest.h"
 
 using namespace std;
 
 
 int main()
 {
+	SSTable s;
+	ElemType e[5] = { 4,2,9,0,8 };
+	s.elem = e;
+	s.TableLen = 5;
+
+	ChapterEightTest mytest;
+	mytest.two(s, s.TableLen);
+
+	for (int i = 0; i < s.TableLen; i++)
+	{
+		cout << s.elem[i];
+	}
+	
 	
 	
 	return 0;

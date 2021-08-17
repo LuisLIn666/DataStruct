@@ -39,34 +39,87 @@ void ChapterEightTest::one(SSTable& s, int n)
 	//快速排序思想在于将区间分化成左右两个区间，比基准小往左比基准大往右边
 	deque<ElemType> que;
 }
+//从前往后冒泡，将元素最大的移动到后面
+void  bubling_max(SSTable& s, int n)
+{
+	int low = 0; int high = n;
+	
+	
+	for (int i = low; i < high; ++i)
+	{
+		bool flag = false;
+		if (s.elem[i] > s.elem[i + 1])
+		{
+			mySwap(s.elem[i] , s.elem[i + 1]);
 
+			flag = true;
+		}
+		
+		if (!flag)
+		{
+			return;
+		}
+		
+	}
+}
+
+
+//从前往后冒泡，将元素最大的移动到后面
+bool  bubling_max(SSTable& s, int low,int n)
+{
+	 int high = n;
+	
+	
+	for (int i = low; i < high; ++i)
+	{
+		bool flag = false;
+		if (s.elem[i] > s.elem[i + 1])
+		{
+			mySwap(s.elem[i] , s.elem[i + 1]);
+
+			flag = true;
+		}
+		
+		return flag;
+		
+	}
+}
+
+//从后往前冒泡，将元素最小的移动到前面
+bool  bubling_min(SSTable& s, int low,int n)
+{
+	 int high = n - 1;
+
+
+	for (int i = high; i>low; --i)
+	{
+		bool flag = false;
+		if (s.elem[i] < s.elem[i -1])
+		{
+			mySwap(s.elem[i], s.elem[i - 1]);
+
+			flag = true;
+		}
+
+		return flag;
+
+	}
+}
 void ChapterEightTest::two(SSTable& s,int n)
 {
-	int low = 0, high = n - 1;
+	int low = 0; int high = n - 1;
 	bool flag = true;
-	while (low<high&&flag)
+	while (low<high && flag)
 	{
-		flag = false;
-		for (int i = low; i < high; i++)
-		{
-			if (s.elem[i] > s.elem[i + 1])
-			{
-				mySwap(s.elem[i], s.elem[i + 1]);
-				flag = true;
-			}
-		}
+		bool flag1 = bubling_max(s, low, high);
 		high--;
-		for (int j = high; j> low; j--)
-		{
-			if (s.elem[j] < s.elem[j - 1])
-			{
-				mySwap(s.elem[j], s.elem[j - 1]);
-				flag = true;
-			}
-		}
+		bool flag2 = bubling_min(s, low, high);
 		low++;
+		if (!flag1 && !flag2)
+		{
+			flag = false;
+		}
 	}
-	
 }
 
 int ChapterEightTest::five(SSTable& s,int k)
