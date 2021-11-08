@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -151,6 +151,7 @@
     <ClCompile Include="ChapterEightTest.cpp" />
     <ClCompile Include="ChapterTwoTest.cpp" />
     <ClCompile Include="DNode.cpp" />
+    <ClCompile Include="examtest.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="LinkList.cpp" />
     <ClCompile Include="LinkStack.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="ChapterTwoTest.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="DNode.h" />
+    <ClInclude Include="examtest.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="IndexTable.h" />
     <ClInclude Include="LinkList.h" />
@@ -187,6 +189,7 @@
     <ClInclude Include="SSTable.h" />
     <ClInclude Include="sqStack.h" />
     <ClInclude Include="VNode.h" />
+    <ClInclude Include="Glist.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataStruct.licenseheader" />

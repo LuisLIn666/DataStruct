@@ -22,23 +22,43 @@
 
 using namespace std;
 
-
+int function(int a, int b, int c)
+{
+	
+	return abs(a - b) + abs(b - c) + abs(c-a);
+}
+	
 int main()
 {
-	SSTable s;
-	ElemType e[5] = { 4,2,9,0,8 };
-	s.elem = e;
-	s.TableLen = 5;
-
-	ChapterEightTest mytest;
-	mytest.two(s, s.TableLen);
-
-	for (int i = 0; i < s.TableLen; i++)
+	int e, f, g;
+	int a[3] = { -1,0,9 };
+	int b[4] = { -25,-10,10,11 };
+	int c[5] = { 2,9,17,30,41 };
+	int d[3][4][5];
+	int min = function(a[0],b[0],c[0]);
+	for ( int i = 0; i <3; i++)
 	{
-		cout << s.elem[i];
+		for (int  j = 0; j <4; j++)
+		{
+			for (int  k = 0; k <5; k++)
+			{
+				if (min > function(a[i],b[j],c[k]))
+				{
+					min = function(a[i], b[j], c[k]);
+					e = i;
+					f = j;
+					g = k;
+					
+				}
+				
+				
+				//cout<<function(a[i],b[k],c[j])<<endl;
+				//cout << "(" << a[i] << "," << b[j] << "," << c[k] << ")" << endl;
+			}
+		}
 	}
 	
-	
-	
+	cout << min;
+	cout << e+1 <<" "<< f+1 <<" "<< g+1;
 	return 0;
 }

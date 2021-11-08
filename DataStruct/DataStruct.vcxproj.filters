@@ -55,6 +55,12 @@
     <Filter Include="源文件\stack">
       <UniqueIdentifier>{7428c1a1-0b19-4a79-bbef-64fdae6a7183}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Glist">
+      <UniqueIdentifier>{c2761ec8-c631-4f6b-b4e4-f516300fea79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Glist">
+      <UniqueIdentifier>{946fbb95-114b-4f97-918f-2c4ba44dc5c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -122,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="BAddTreeNode.cpp">
       <Filter>源文件\Search</Filter>
+    </ClCompile>
+    <ClCompile Include="examtest.cpp">
+      <Filter>源文件\MyTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +205,12 @@
     </ClInclude>
     <ClInclude Include="BAddTreeNode.h">
       <Filter>头文件\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="examtest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Glist.h">
+      <Filter>头文件\Glist</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
