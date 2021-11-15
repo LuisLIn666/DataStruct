@@ -159,6 +159,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mysearch.cpp" />
     <ClCompile Include="Mysort.cpp" />
+    <ClCompile Include="RBTNode.cpp" />
+    <ClCompile Include="RBTree.cpp" />
     <ClCompile Include="SqList.cpp" />
     <ClCompile Include="SqStack.cpp" />
     <ClCompile Include="VNode.cpp" />
@@ -185,6 +187,8 @@
     <ClInclude Include="LNode.h" />
     <ClInclude Include="Mysearch.h" />
     <ClInclude Include="Mysort.h" />
+    <ClInclude Include="RBTNode.h" />
+    <ClInclude Include="RBTree.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SSTable.h" />
     <ClInclude Include="sqStack.h" />

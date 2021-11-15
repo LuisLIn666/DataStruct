@@ -132,6 +132,12 @@
     <ClCompile Include="examtest.cpp">
       <Filter>源文件\MyTest</Filter>
     </ClCompile>
+    <ClCompile Include="RBTNode.cpp">
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="RBTree.cpp">
+      <Filter>源文件\Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -211,6 +217,12 @@
     </ClInclude>
     <ClInclude Include="Glist.h">
       <Filter>头文件\Glist</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTNode.h">
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTree.h">
+      <Filter>头文件\Tree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
